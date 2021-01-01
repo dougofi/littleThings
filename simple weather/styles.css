@@ -1,0 +1,70 @@
+html, body{
+    height: 100%; 
+}
+
+body{
+    display: flex; 
+    flex-direction: column;
+    background-color: #5f94e8;
+    overflow: auto;
+}
+
+.content{ 
+    flex: 1 0 auto; 
+}
+.footer{
+    flex-shrink: 0; 
+    /* background-color: black;  */
+    text-align: center;
+}
+#headertext{
+    color: white ; 
+    font-size: 40px;
+    text-align: center;
+}
+#app-body{
+    background-color: aquamarine;
+    margin: 5% 10% 5% 10%; 
+    height: 80vh;
+}
+#searchbar{
+    width: 60vw; 
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-top: 3%; 
+    height: 5vh;
+    font-size: 18px;
+    color: #94a1b5;
+    border-style: none;
+}
+#localWeatherCard{
+    width: 60vw; 
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-top: 3%; 
+    height: 25vh;
+    font-size: 18px;
+    color: #94a1b5;
+    border-style: none;
+    background-color: white; 
+}
+#otherDaysHolder{
+    width: 60vw; 
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-top: 3%; 
+    padding-bottom: 5%; 
+    height: 25vh;
+    font-size: 18px;
+    color: #94a1b5;
+    border-style: none;
+    background-color: white; 
+}
+#localCity{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2%;
+}
+#weather{
+    font-size:45px;
+}
