@@ -28,9 +28,9 @@ body{
     height: 80vh;
 }
 #searchbar{
-    width: 60vw; 
+    width: 48vw; 
     margin-left: 10%;
-    margin-right: 10%; 
+    /* margin-right: 10%;  */
     margin-top: 3%; 
     height: 5vh;
     font-size: 18px;

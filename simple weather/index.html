@@ -11,21 +11,21 @@
         <h3 id="headertext">Little Weather App<span> <i class="fas fa-cloud"></i></span></h3>
 
         <div id ="app-body">
-          <input id = "searchbar" type="text" placeholder="enter a city to check the weather" width = 100% size = 50/>
+          <input oninput="searchBarHandler(value)" id = "searchbar" type="text" placeholder="enter a city to check the weather" size = 50/>
+          <button>Search</button>
           <div id="localWeatherCard">
-              <p id="localCity">city</p>
+              <p id="localCity"><i class ="fa fa-map-marker"></i>city</p>
               <p style="text-align: center;">Your current weather below</p>
-              
-              <p style="text-align: center;" id="weather"><i class="fas fa-cloud"></i>--</p>
+              <i styleclass="fas fa-cloud" style = "margin-left: 50%;"></i>
+              <p style="text-align: center;" id="weather">--</p><span>&deg;</span>
           </div>
           <div id = "otherDaysHolder">
               <p>this is the space for historical data</p>
-          </div>
         </div>
 
     </div>
    
-    <footer class = "footer">Little weather app was powered by the {} API</footer>
+    <footer class = "footer">Little weather app was powered by the openweathermap.org API</footer>
     <script type="text/javascript" src="brains.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 

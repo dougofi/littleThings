@@ -29,6 +29,18 @@ const getCurrentWeather = async (longitude, latitude) => {
 }
 
 
+const searchBarHandler =  () => {
+    let searchInput = ''; 
+    searchInput = document.getElementById('searchbar').value; 
+    console.log(searchInput);
+    fetch('https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters').then(response => {
+        console.log(response.json())
+    })
+} 
+
+
+
+
 
 getLocation();
 
