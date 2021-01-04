@@ -3,16 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>LWA</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Just+Another+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class = "content">
-        <h3 id="headertext">Little Weather App<span> <i class="fas fa-cloud"></i></span></h3>
+    <div>
+        <header>
+            <div id="headertext">LittleWeatherApp<span><i class = "fas fa-cloud"></i></span></div>
+            <div id="today"><i class = "fa fa-calendar" aria-hidden="true"></i>
+            </div>
+            <div id="searchDiv">
+                <i  class="fa fa-compass"></i>
+                <input oninput="searchBarHandler(value)" id = "searchbar" type="text" placeholder="enter a city to check the weather"/>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </header>
 
-        <div id ="app-body">
-          <input oninput="searchBarHandler(value)" id = "searchbar" type="text" placeholder="enter a city to check the weather" size = 50/>
-          <button>Search</button>
+        <div id = "currentWeather">
+            <h2 style="text-align:center;">Location</h2>
+            <h1 style="text-align:center;">icon here</h1>
+            <h1 style="text-align:center;">temperature here</h1>
+            <p style="text-align:center;">little stats here</p>
+
+        </div>
+
+        <div id = "weatherHistory">
+            <div id="box-1">
+
+            </div>
+            <div id="box-2">
+
+            </div>
+            <div id="box-3">
+
+            </div>
+            <div id="box-4">
+
+            </div>
+            <div id="box-5">
+
+            </div>
+            <div id="box-6">
+
+            </div>
+            <div id="box-7">
+
+            </div>
+
+             </div>
+    </div>
+        <!-- <div id ="app-body">
+         
           <div id="localWeatherCard">
               <p id="localCity"><i class ="fa fa-map-marker"></i>city</p>
               <p style="text-align: center;">Your current weather below</p>
@@ -21,11 +64,10 @@
           </div>
           <div id = "otherDaysHolder">
               <p>this is the space for historical data</p>
-        </div>
+        </div> -->
 
     </div>
    
-    <footer class = "footer">Little weather app was powered by the openweathermap.org API</footer>
     <script type="text/javascript" src="brains.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 

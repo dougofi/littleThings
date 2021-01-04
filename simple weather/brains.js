@@ -33,16 +33,22 @@ const searchBarHandler =  () => {
     let searchInput = ''; 
     searchInput = document.getElementById('searchbar').value; 
     console.log(searchInput);
-    fetch('https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters').then(response => {
+    fetch('https://maps.googleapis.com/maps/api/place/autocomplete/json?&key=AIzaSyDj1pIhnBs_LKVdrAj_8SSOVRawn0_ZLoA').then(response => {
         console.log(response.json())
     })
 } 
 
+const showDate = () => {
+    var today = new Date();
+    document.getElementById("today").innerHTML = today; 
+}
 
 
 
 
-getLocation();
+
+// getLocation();
+showDate();
 
 
 

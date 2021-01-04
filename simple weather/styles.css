@@ -1,70 +1,63 @@
 html, body{
     height: 100%; 
-}
+    color: #d3e3d4;
+    font-family: 'Comic Neue', cursive;
 
+}
+header{
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    border: 1px solid red ;
+    /* font-family: 'Just Another Hand', cursive; */
+    font-size: 20px;
+    /* width: 85%; */
+}
+header > div{
+    display: flex;
+    flex-wrap: nowrap; 
+    border: 1px solid red; 
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+    /* margin-left: 1%; */
+    /* background-color: #79b07d; */
+}
 body{
     display: flex; 
     flex-direction: column;
-    background-color: #5f94e8;
+    background-color: #6d8a79;
     overflow: auto;
 }
+#searchDiv{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#currentWeather{
+    margin-top: 5%;
+    margin-right: 12%;
+    margin-left: 12%;
+    height: 25vh;
+    border: 1px solid red;
+    background-color: #79b07d;
+}
 
-.content{ 
-    flex: 1 0 auto; 
+#weatherHistory {
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-top: 5%;
+    border: 1px solid red;
+    display: flex;
 }
-.footer{
-    flex-shrink: 0; 
-    /* background-color: black;  */
-    text-align: center;
-}
-#headertext{
-    color: white ; 
-    font-size: 40px;
-    text-align: center;
-}
-#app-body{
-    background-color: aquamarine;
-    margin: 5% 10% 5% 10%; 
-    height: 80vh;
-}
-#searchbar{
-    width: 48vw; 
-    margin-left: 10%;
-    /* margin-right: 10%;  */
-    margin-top: 3%; 
-    height: 5vh;
-    font-size: 18px;
-    color: #94a1b5;
-    border-style: none;
-}
-#localWeatherCard{
-    width: 60vw; 
-    margin-left: 10%;
-    margin-right: 10%; 
-    margin-top: 3%; 
-    height: 25vh;
-    font-size: 18px;
-    color: #94a1b5;
-    border-style: none;
-    background-color: white; 
-}
-#otherDaysHolder{
-    width: 60vw; 
-    margin-left: 10%;
-    margin-right: 10%; 
-    margin-top: 3%; 
-    padding-bottom: 5%; 
-    height: 25vh;
-    font-size: 18px;
-    color: #94a1b5;
-    border-style: none;
-    background-color: white; 
-}
-#localCity{
-    font-size: 30px;
-    text-align: center;
-    margin-top: 2%;
-}
-#weather{
-    font-size:45px;
+
+#weatherHistory > div{
+    display: flex;
+    border: 1px solid red; 
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: 1%;
+    height: 20vh;
+    background-color: #79b07d;
 }
